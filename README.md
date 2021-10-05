@@ -15,6 +15,6 @@ Zotero must be running for the extension to work
   will show the title, authors, and abstract.
 
 - Bibliography information on hover. When you hover the mouse over a citation
-  such as `[@somesitekey]`, zotero and better-bibtex render a bibliography entry
+  such as `[@somecitekey]`, a bibliography entry
   (currently in the american-chemical-society style) which contains the authors,
-  title, journal, etc. and shows that in a hover tooltip.
+  title, journal, etc. is rendered and shown in a hover tooltip.
