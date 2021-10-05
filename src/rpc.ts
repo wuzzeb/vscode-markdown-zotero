@@ -36,8 +36,8 @@ export function search(query: string): Promise<ReadonlyArray<Citation>> {
   return rpc<ReadonlyArray<Citation>>("items.search", [query]);
 }
 
-export function bibliography(citekey: string): Promise<string> {
-  return rpc<string>("items.bibliography", [[citekey], { contentType: "text", id: style }]);
+export function bibliography(citekey: string, format: "html" | "text"): Promise<string> {
+  return rpc<string>("items.bibliography", [[citekey], { contentType: format, id: style }]);
 }
 
 export async function allLibraryRefs(): Promise<ReadonlyArray<Citation>> {

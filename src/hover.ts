@@ -27,7 +27,15 @@ export class RefHoverProvider implements vscode.HoverProvider {
       return null;
     }
 
-    const bib = await bibliography(ref.citekey);
+    const bib = await bibliography(ref.citekey, "text");
+
+    /*
+    https://github.com/microsoft/vscode/issues/40607
+
+    const markdown = new vscode.MarkdownString();
+    markdown.isTrusted = true;
+    markdown.appendMarkdown(bib);
+    */
 
     return new vscode.Hover(bib, ref.range);
   }
