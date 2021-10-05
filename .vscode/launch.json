@@ -13,9 +13,8 @@
 				"--extensionDevelopmentPath=${workspaceFolder}"
 			],
 			"outFiles": [
-				"${workspaceFolder}/out/**/*.js"
-			],
-			"preLaunchTask": "${defaultBuildTask}"
+				"${workspaceFolder}/bundle/*.js"
+			]
 		},
 		{
 			"name": "Extension Tests",
@@ -28,7 +27,7 @@
 			"outFiles": [
 				"${workspaceFolder}/out/test/**/*.js"
 			],
-			"preLaunchTask": "${defaultBuildTask}"
+			"preLaunchTask": "npm: test-compile"
 		}
 	]
 }
