@@ -10,7 +10,6 @@
 		"rootDir": "src",
 		"strict": true,
 		"strictPropertyInitialization": true,
-		"forceConsistentCasingInFileNames": true,
 		"noImplicitReturns": true,
 		"noFallthroughCasesInSwitch": true,
 		"noUnusedParameters": true,

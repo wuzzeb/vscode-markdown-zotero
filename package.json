@@ -10,15 +10,11 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:markdown-zotero.helloWorld"
+    "onLanguage:markdown"
   ],
   "main": "./bundle/main.js",
   "contributes": {
     "commands": [
-      {
-        "command": "markdown-zotero.helloWorld",
-        "title": "Hello World"
-      }
     ]
   },
   "scripts": {
@@ -44,5 +40,8 @@
     "mocha": "^9.1.1",
     "prettier": "^2.4.1",
     "typescript": "^4.4.3"
+  },
+  "dependencies": {
+    "node-fetch": "^3.0.0"
   }
 }
